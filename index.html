@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+<style>
+    body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+        margin: 0;
+        padding: 0;
+    }
+
+    .div-green-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 850px;
+        border-radius: 100px;
+        background-color: green;
+        color: white;
+        font-size: 72px;
+        font-weight: 700;
+        border: 10px solid black;
+    }
+
+    .div-green-btn:hover {
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div class="div-green-btn" id="btn" onclick="changeColor()" ontouchstart="changeColor(); event.preventDefault();">On</div>
+<script>
+    function changeColor() {
+    const btn = document.getElementById('btn');
+
+    if (btn.innerText === 'On') {
+        btn.innerText = 'Off';
+        btn.style.backgroundColor = 'red';
+        } else {
+            btn.innerText = 'On';
+            btn.style.backgroundColor = 'green';
+        }
+    }
+</script>
+</body>
+</html>
