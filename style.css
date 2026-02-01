@@ -39,12 +39,20 @@ body {
     height: 80px;
     width: 190px;
     border-radius: 10px;
-    background-color: green;
     color: white;
     font-size: 72px;
     font-weight: 700;
     border: 5px solid black;
 }
+
+.div-green-btn.off {
+    background-color: red; 
+}
+
+.div-green-btn.on {
+    background-color: green;
+}
+
 .div-green-btn:hover {
     cursor: pointer;
 }
