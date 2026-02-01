@@ -1,0 +1,59 @@
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+}
+
+.touch-display-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 768px;
+    width: 1024px;
+}
+
+.card {
+    margin: 20px 0;
+    height: max-content;
+    width: 220px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-green-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    height: 80px;
+    width: 190px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+    border: 5px solid black;
+}
+.div-green-btn:hover {
+    cursor: pointer;
+}
+
+.div-green-txt {
+    margin: 20px 0;
+    font-size: 32px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    width: 100%
+}
